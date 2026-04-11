@@ -4,7 +4,7 @@
 
     <groupId>io.github.de-gupta</groupId>
     <artifactId>security.parent</artifactId>
-    <version>0.1.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
@@ -31,7 +31,7 @@
         <connection>scm:git:ssh://git@github.com/de-gupta/security.parent.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/de-gupta/security.parent.git</developerConnection>
         <url>https://github.com/de-gupta/security.parent.git</url>
-        <tag>HEAD</tag>
+        <tag>v1.0.0</tag>
     </scm>
 
     <build>
