@@ -16,15 +16,15 @@
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <maven.compiler.plugin.version>3.13.0</maven.compiler.plugin.version>
-        <maven.release.plugin.version>3.1.1</maven.release.plugin.version>
+        <maven.compiler.plugin.version>3.15.0</maven.compiler.plugin.version>
+        <maven.release.plugin.version>3.3.1</maven.release.plugin.version>
 
-        <jacoco.version>0.8.14</jacoco.version>
+        <jacoco.plugin.version>0.8.14</jacoco.plugin.version>
 
         <maven.gpg.plugin.version>3.2.8</maven.gpg.plugin.version>
-        <maven.source.plugin.version>3.3.1</maven.source.plugin.version>
-        <maven.javadoc.plugin.version>3.11.2</maven.javadoc.plugin.version>
-        <maven.central.publishing.version>0.8.0</maven.central.publishing.version>
+        <maven.source.plugin.version>3.4.0</maven.source.plugin.version>
+        <maven.javadoc.plugin.version>3.12.0</maven.javadoc.plugin.version>
+        <maven.central.publishing.plugin.version>0.10.0</maven.central.publishing.plugin.version>
     </properties>
 
     <scm>
@@ -96,7 +96,7 @@
             <plugin>
                 <groupId>org.sonatype.central</groupId>
                 <artifactId>central-publishing-maven-plugin</artifactId>
-                <version>${maven.central.publishing.version}</version>
+                <version>${maven.central.publishing.plugin.version}</version>
                 <extensions>true</extensions>
                 <configuration>
                     <publishingServerId>central</publishingServerId>
@@ -114,7 +114,7 @@
                     <plugin>
                         <groupId>org.jacoco</groupId>
                         <artifactId>jacoco-maven-plugin</artifactId>
-                        <version>${jacoco.version}</version>
+                        <version>${jacoco.plugin.version}</version>
                         <executions>
                             <execution>
                                 <goals>
